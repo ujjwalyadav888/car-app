@@ -1,0 +1,127 @@
+/* CarStyles.css */
+
+.car-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .car-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f6f8fc 0%, #e9eef8 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .car-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  
+  .car-description {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .car-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin: 0;
+  }
+  
+  .car-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .car-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+  }
+  
+  .car-info {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+  }
+  
+  .car-info p {
+    margin: 0;
+    white-space: pre-line;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #4a5568;
+    gap: 1rem;
+  }
+  
+  .spinner {
+    animation: spin 1s linear infinite;
+    width: 24px;
+    height: 24px;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .car-container {
+      padding: 1rem;
+    }
+  
+    .car-title {
+      font-size: 2rem;
+    }
+  
+    .car-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .car-description,
+    .car-details {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Hover Effects */
+  .car-description:hover,
+  .car-details:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Smooth Transitions */
+  .car-info {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .car-info:empty {
+    opacity: 0;
+  }

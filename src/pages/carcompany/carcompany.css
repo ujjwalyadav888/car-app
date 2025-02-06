@@ -1,0 +1,142 @@
+/* Container styles */
+.car-company-container {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-color: #f3f4f6;
+  }
+  
+  .inner-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  a{
+    text-decoration: none;
+    color: #1f2937;
+  }
+  
+  .brand-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid layout */
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  /* Card styles */
+  .car-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .car-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .car-image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .car-details {
+    padding: 1.5rem;
+  }
+  
+  .car-model {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .car-info {
+    margin: 0.5rem 0;
+    color: #4b5563;
+  }
+  
+  .car-year-label {
+    font-weight: 500;
+  }
+  
+  .car-price {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive breakpoints */
+  @media (min-width: 768px) {
+    .car-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .car-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .car-card {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Loading state */
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+  }
+  
+  /* Error state */
+  .error {
+    text-align: center;
+    padding: 2rem;
+    color: #dc2626;
+  }
+  
+  /* Empty state */
+  .no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-style: italic;
+  }
