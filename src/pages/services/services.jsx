@@ -1,5 +1,6 @@
 import React from 'react';
 import { Car, CreditCard, Wrench, Shield, ArrowRight, Star } from 'lucide-react';
+import "./services.css";
 
 const Services = () => {
   const services = [
